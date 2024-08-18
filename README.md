@@ -23,7 +23,12 @@ This project is a Help Center interface built using the MERN stack (MongoDB, Exp
 - Node.js and npm installed
 - MongoDB installed and running
 
-### Clone the repository:
+ 
+### Backend ENV Variables
 
-   ```bash
-   git clone https://github.com/Keshab1113/Future_Skills_Task.git
+```bash
+PORT = 3000
+MongoDb_URL = mongodb+srv://keshabdas2003:keshabhelp@cluster0.liduf.mongodb.net/  
+
+
+
