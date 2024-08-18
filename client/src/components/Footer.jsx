@@ -1,51 +1,82 @@
-// src/components/Footer.jsx
 import React from 'react';
+import img from "/logo.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-10">
-            <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+        <footer className="bg-black text-white py-12">
+            <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
                 <div>
-                    <h4 className="font-bold mb-2">Abstract</h4>
+                    <h3 className="font-bold text-lg mb-4">Abstract</h3>
                     <ul>
-                        <li><a href="#" className="hover:underline">Branches</a></li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Branches</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4 className="font-bold mb-2">Resources</h4>
+                    <h3 className="font-bold text-lg mb-4">Resources</h3>
                     <ul>
-                        <li><a href="#" className="hover:underline">Blog</a></li>
-                        <li><a href="#" className="hover:underline">Help Center</a></li>
-                        <li><a href="#" className="hover:underline">Release Notes</a></li>
-                        <li><a href="#" className="hover:underline">Status</a></li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Blog</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Help Center</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Release Notes</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Status</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4 className="font-bold mb-2">Community</h4>
+                    <h3 className="font-bold text-lg mb-4">Community</h3>
                     <ul>
-                        <li><a href="#" className="hover:underline">Twitter</a></li>
-                        <li><a href="#" className="hover:underline">LinkedIn</a></li>
-                        <li><a href="#" className="hover:underline">Facebook</a></li>
-                        <li><a href="#" className="hover:underline">Dribbble</a></li>
-                        <li><a href="#" className="hover:underline">Podcast</a></li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Twitter</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">LinkedIn</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Facebook</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Dribbble</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Podcast</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4 className="font-bold mb-2">Company</h4>
+                    <h3 className="font-bold text-lg mb-4">Company</h3>
                     <ul>
-                        <li><a href="#" className="hover:underline">About Us</a></li>
-                        <li><a href="#" className="hover:underline">Careers</a></li>
-                        <li><a href="#" className="hover:underline">Legal</a></li>
-                        <li><a href="#" className="hover:underline">Contact Us</a></li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">About Us</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Careers</a>
+                        </li>
+                        <li className="mb-2">
+                            <a href="#" className="text-gray-400 hover:text-white">Legal</a>
+                        </li>
                     </ul>
                     <div className="mt-4">
-                        <a href="mailto:info@abstract.com" className="hover:underline">info@abstract.com</a>
+                        <h3 className="font-bold text-lg">Contact Us</h3>
+                        <p className="text-gray-400 hover:text-white">info@abstract.com</p>
                     </div>
+                    
+                </div>
+                <div className="container mx-auto mt-28 flex flex-col items-start pt-8">
+                    <img src={img} alt="" className='w-8 h-8 rounded'/>
+                    <p className="text-gray-400 text-sm mt-4">
+                        &copy; Copyright 2022 Abstract Studio Design, Inc. All rights reserved
+                    </p>
                 </div>
             </div>
-            <div className="text-center mt-10">
-                <p>© Copyright 2022 Abstract Studio Design, Inc. All rights reserved</p>
-            </div>
+            
         </footer>
     );
 };

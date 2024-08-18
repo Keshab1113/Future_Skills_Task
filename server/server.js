@@ -12,10 +12,31 @@ app.get('/ping', (req, res) => {
     res.send('Server is running');
 });
 
+app.post('/cards', async (req, res) => {
+    try {
+        const { title, description } = req.body;
+        const card = new Card({ title, description });
+        await card.save();
+        res.status(201).send(card);
+    } catch (err) {
+        res.status(400).send(err.message);
+    }
+});
+
 app.get('/cards', async (req, res) => {
     try {
         const cards = await Card.find();
         res.send(cards);
+    } catch (err) {
+        res.status(500).send(err.message);
+    }
+});
+
+app.get('/cards/:title', async (req, res) => {
+    try {
+        const card = await Card.findOne({ title: req.params.title });
+        if (!card) return res.status(404).send('Card not found');
+        res.send(card);
     } catch (err) {
         res.status(500).send(err.message);
     }
