@@ -29,6 +29,8 @@ This project is a Help Center interface built using the MERN stack (MongoDB, Exp
 ```bash
 PORT = 3000
 MongoDb_URL = mongodb+srv://keshabdas2003:keshabhelp@cluster0.liduf.mongodb.net/  
+```
 
-
-
+![Screenshot (375)](https://github.com/user-attachments/assets/33b35424-a404-423a-a82c-2e23d5c2ca50)
+![Screenshot (374)](https://github.com/user-attachments/assets/c60c989d-fd8c-4222-95e5-fb522434dff6)
+![Screenshot (373)](https://github.com/user-attachments/assets/2a63764b-ac84-47e9-95fe-0a7abc96e274)
